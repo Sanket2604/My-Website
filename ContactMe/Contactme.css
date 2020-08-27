@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+/* Nav bar Starts here*/
+nav{
+    background-color: rgba(0, 0, 0, 0.705);
+}
+.navbar-brand{
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    color: white;
+}
+.nav-link{
+    font-family: 'Allan', cursive;
+    font-size: 30px;
+    color: white;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+.nav-link:hover{
+    color: white !important;
+}
+.btn{
+    border: 3px solid white;
+}
+.navbar-toggler{
+    background-image: url(../Images/toggle.png);
+    background-size: cover;
+    height: 30px;
+    width: 60px;
+}
+/* Body layout lies here*/
+body{
+    background-image: url(contactmepic.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 0;
+}
+.container{
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    color: black;
+    background-color: rgba(255, 249, 249, 0.712);
+}
+.row1{
+    height: 70vh;
+    justify-content:center;
+    align-items:center;    
+}
+.row3, .row4{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+/* profile pic animation lies here */
+img{
+    height: 50vh;
+    width: 50vh;
+    top: 120%;
+    right: 120%;
+    left: 150%;
+}
+.ImgContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50vh;
+    height: 50vh;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+}
+
+.ImgContainer .front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: rgba(255, 255, 255, 0);
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+}
+
+.ImgContainer:hover .front {
+    transform: rotateX(-180deg);
+}
+.ImgContainer .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background: rgba(255, 255, 255, 0);
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+}
+.ImgContainer .back:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+}
+
+.ImgContainer:hover .back {
+    transform: rotateX(0deg);
+}
+
+.ImgContainer .back .details{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.ImgContainer .back .details h2{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+}
+.ImgContainer .back .details h2 span{
+    color: #504a4a;
+    font-size: 16px;
+}
+.social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    background: #262626;
+    color:#fff;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.social-icons a .fab, .social-icons a .far{
+    line-height: 36px;
+}
+.social-icons .gmail:hover {
+    background: #e60c0c;
+}
+.social-icons .fac:hover {
+    background: #0d0abd;
+}
+.social-icons .twit:hover {
+    background: #3168ff;
+}
+.social-icons .linked:hover {
+    background: #060057;
+}
+.social-icons .inst:hover {
+    background: #e91e63;
+}
+.socialcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+}
+/* Form design lies here*/
+.text-center{
+    font-family: 'Dancing Script', cursive;
+}
+.form{
+    width: 90%;
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+    font-size: 20px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form input{
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0);
+}
+.form label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+.form label::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 4px solid #087dc0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content-name {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+    transform: translateY(-150%);
+    font-size: 18px;
+    color: #087dc0;
+
+}
+
+.form input:focus + .label-name::after, 
+.form input:valid + .label-name::after{
+    transform: translateX(0%);
+}
+/* Text area lies here*/
+textarea{
+    margin-top: 5vh;
+    width: 80%;
+    height: 30vh;
+    padding: 2vh;
+    font-family: 'Markazi Text', serif;
+    font-size: 30px;
+    border: 2px solid #087dc0;
+    box-shadow: 0 0 5px #34b0f8;
+    border-radius: 10px;
+    background: rgba(245, 245, 245, 0);
+    outline: none;
+}
+
+textarea::placeholder{
+    color: #087dc0;
+}
+
+/* Submit button design lies here*/
+.buttoncontainer {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+.ab{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #0060af;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 30px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.ab:hover {
+    color: white;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 10px #2196f3, 0 0 10px #2196f3; 
+    transition-delay: 1s;
+}
+
+.ab .s {
+    position: absolute;
+    display: block;
+}
+.ab .s:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#2196f3);
+}
+.ab:hover .s:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+.ab .s:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#2196f3);
+}
+.ab:hover .s:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.ab .s:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+}
+.ab:hover .s:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.ab .s:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2196f3);
+}
+.ab:hover .s:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+/* Media Querry for submit button */
+@media only screen and (max-width: 900px) {
+  .ab{
+      border: 2px solid #2196f3;  
+      background-color: #2196f3;
+      color: white;    
+    }
+  .back{
+      display: none;      
+    }
+  .ImgContainer:hover .front {
+    transform: none;
+    }
+    .row1{
+    padding-top: 10vh;
+    height: 60vh;
+    }
+    .social-icons .gmail{
+        background: #e60c0c;
+    }
+    .social-icons .fac {
+        background-color: #0d0abd;
+    }
+    .social-icons .twit {
+        background-color: #3168ff;
+    }
+    .social-icons .linked {
+        background-color: #060057;
+    }
+    .social-icons .inst{
+        background-color: #e91e63;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    
+    .socialcontainer{
+        display: none;
+    }
+}

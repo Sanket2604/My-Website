@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allan&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.705);
+}
+.navbar-brand{
+    font-family: 'Great Vibes', cursive;
+    
+    color: white;
+}
+.nav-link{
+    font-family: 'Allan', cursive;
+    font-size: 30px;
+    color: white;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+.nav-link:hover{
+    color: white !important;
+}
+.btn{
+    border: 3px solid white;
+}
+.navbar-toggler{
+    background-image: url(../../../Images/toggle.png);
+    background-size: cover;
+    height: 30px;
+    width: 60px;
+}
+.ab{
+    transition: ease-in-out;
+    transition-duration: 1s;
+}
+.ab:hover{
+    text-decoration: none;
+    color: darkblue;
+}
+
+.cont2{
+    background-image: url(../../menucode.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 0;
+    padding: 15vh;
+    color: white;
+}
+.heading{
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: xxx-large;
+}
+.content{
+    font-family: 'Patrick Hand', cursive;
+    text-align: justify;
+    font-size: xx-large;
+}
+textarea{
+    height: 80vh;
+    width: 95vw;
+    font-family: 'Source Code Pro', monospace;
+    font-size: x-large;
+    font-weight: 650;
+    background-color: rgba(128, 128, 128, 0.795);
+    border: 2px solid rgba(128, 128, 128, 0.9);
+    padding: 5vh;
+}
+.row1{
+    padding: 5vh;
+}

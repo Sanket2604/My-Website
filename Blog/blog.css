@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allan&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+ /* Nav bar starts here */
+.navbar-brand{
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    color: white;
+}
+.nav-link{
+    font-family: 'Allan', cursive;
+    font-size: 30px;
+    color: white;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+.nav-link:hover{
+    color: white !important;
+}
+.btn{
+    border: 3px solid white;
+}
+.navbar-toggler{
+    background-image: url(../Images/toggle.png);
+    background-size: cover;
+    height: 30px;
+    width: 60px;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid black;
+}
+img{
+    height: 90vh;
+    width: 90%;
+}

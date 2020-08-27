@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allan&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+ /* Nav bar starts here */
+nav{
+    background-color: rgba(0, 0, 0, 0.705);
+}
+.navbar-brand{
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    color: white;
+}
+.nav-link{
+    font-family: 'Allan', cursive;
+    font-size: 30px;
+    color: white;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+.nav-link:hover{
+    color: white !important;
+}
+.btn{
+    border: 3px solid white;
+}
+.navbar-toggler{
+    background-image: url(../Images/toggle.png);
+    background-size: cover;
+    height: 30px;
+    width: 60px;
+}
+/* Navbar ends here
+   Main Body Format lies here*/
+.container-fluid{
+    background-color: #3aa2c2;
+}
+.space1{
+    background-image: url(withprofilepic.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;    
+    z-index: 0;
+}
+img{
+    height: 45vh;
+    width: 45vh;
+}
+.Image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 62vh;
+    margin-top: 15vh;
+    padding: 10vh;
+}
+.row1{
+    padding: 10vh 10vh 0px 10vh;
+    text-align: justify;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+    color: black;
+}
+
+.row2{
+    padding: 0px 10vh;
+    text-align: justify;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+    color: black;
+}
+.row3{
+    padding: 0vh 10vh 10vh 10vh;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+@media only screen and (max-width: 766px) {
+    .row1, .row2, .row3{
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+}

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../code.png" type="image/gif">
+    <link rel="stylesheet"  href="SourceCodeStyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Source Code</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" style="font-size: 30px;" href="../AboutMe.html" target="_blank">Sanket</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"></button>       
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav mr-auto ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../AboutMe/AboutMe.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../../ContactMe/Contactme.html">Contact Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../Menu/Main_Menu/Menu.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../Blog/blog.html">Blog</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><b>Search</b></button>
+          </form>
+        </div>
+    </nav>
+    <div class="container-fluid cont2">
+      <div class="row row-content row1">
+        <div class="col-12">
+          <p class="heading">Login Page</p>
+          <p class="content">I created a <a class="ab" href="Payment.html" target="_blank">payments</a> page. This page created can be used in a E-Commerse payment system. This page is not integrted with the payment gateway.</p>
+          <p class="heading">Source code</p>
+          <p class="content" style="text-align: center; font-size: xxx-large; letter-spacing: 0.2em;"><b>HTML</b></p>
+        </div>
+      </div>
+      <div class="row row-content">
+        <div class="col-12 code1">
+          <textarea readonly>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PaymentStyle.css">
+    <script src="https://kit.fontawesome.com/dc9678cfdb.js" crossorigin="anonymous"></script>
+    <title>Payment</title>
+</head>
+<body>
+    <div class="body">
+        <div class="order_summary">
+            <div class="headiing">
+                <h3>Order Summary</h3>
+            </div>
+            <div class="order">
+                <div class="item">
+                    <div class="image img1"></div>
+                    <div class="description"><b>WOODLAND</b><span>Strong and Durable<br>Size: 10 Colour: Olive Green</span></div>
+                    <div class="price"><p><i class="fas fa-rupee-sign"></i> 3,849</p></div>
+                </div>
+                <div class="item">
+                    <div class="image img2"></div>
+                    <div class="description"><b>WILDCRAFT</b><span>Elegant and Resistant<br>College Bag Colour: Black</span></div>
+                    <div class="price"><p><i class="fas fa-rupee-sign"></i> 1,079</p></div>
+                </div>
+                <div class="item">
+                    <div class="image img3"></div>
+                    <div class="description"><b>TITAN</b><span>Reliable and Stylish<br>Men's Watch Colour: Black</span></div>
+                    <div class="price"><p><i class="fas fa-rupee-sign"></i> 5,995</p></div>
+                </div>
+            </div> 
+            <div class="line"></div>
+            <div class="total">
+                <div class="left">
+                    Total<br>
+                    GST 18%<br>
+                    Delivery<br>
+                    Grand Total
+                </div>
+                <div class="right">
+                    <p><i class="fas fa-rupee-sign"></i> 10,923</p>
+                    <p><i class="fas fa-rupee-sign"></i> 1,966</p>
+                    <p><i class="fas fa-rupee-sign"></i> 400</p>
+                    <p><i class="fas fa-rupee-sign"></i> 12,889</p>
+                </div>
+            </div>     
+        </div>   
+        <div class="card_payment">
+            <div class="heading">
+                <h3>Payment</h3>
+            </div>
+            <div class="card_logo"></div>
+            <div class="form">
+                <div class="card_name">
+                    <input type="text" placeholder="Card Holder Name">
+                </div>
+                <div class="card_number">
+                    <input type="text" placeholder="Card Number">
+                </div>
+                <div class="exp_cvv">
+                    <div class="exp">
+                        <input type="text" placeholder="MM/YY">
+                    </div>
+                    <div class="cvv">
+                        <input type="password" placeholder="CVV">
+                    </div>
+                </div>
+            </div>
+            <div class="checkout">
+                <div class="checkout_button">Checkout</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+          </textarea>
+        </div>
+      </div>
+      
+      <div class="row row-content row1">
+        <div class="col-12">
+          <p class="content" style=" text-align: center; font-size: xxx-large; letter-spacing: 0.2em;"><b>CSS</b></p>
+        </div>      
+      </div>
+      <div class="row row-content">
+        <div class="col-12 code1">
+          <textarea readonly>
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(167, 255, 226);
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(167, 255, 226);
+    font-family: 'Lato', sans-serif;
+}
+h3{
+    font-weight: 700;
+    font-size: 24px;
+}
+/* Order summary card*/
+
+.order_summary{
+    padding: 4vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 35vw;
+    background-color: rgb(255, 249, 249);
+    border-top-left-radius: 8%;
+    border-bottom-left-radius: 8%;
+    box-shadow: 2px 2px 8px rgba(128, 128, 128, 0.719);
+}
+
+.order{
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.item{
+    width: 100%;
+    height: 34%;
+    display: flex;
+    justify-content: space-between;      
+    margin-top: 1vh;
+    margin-bottom: 1vh; 
+    background-color: white;
+    box-shadow: 2px 2px 8px rgba(128, 128, 128, 0.719);
+}
+.image{
+    width: 22%;
+    height: 100%;
+}
+.img1{
+    background-image: url(Images/Shoe.jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img2{
+    background-image: url(Images/bag.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img3{
+    background-image: url(Images/Watch.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.description{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-top: 1vh;
+}
+.description span{
+    color: gray;
+    font-size: small;
+}
+.price{
+    width: 22%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    border: 1px solid rgba(128, 128, 128, 0.685);
+    width: 95%;
+    margin: 1vh;
+}
+
+.total{
+    display: flex;
+    margin-top: 2vh;
+    width: 100%;
+    height: 22%;
+    background-color: white;
+    box-shadow: 2px 2px 8px 1px rgba(128, 128, 128, 0.719);
+}
+.left{
+    padding: 1vh 2vw;
+    width: 50%;
+    height: 100%;
+}
+.right{
+    padding: 1vh 2vw;
+    width: 50%;
+    height: 100%;
+    text-align: right;
+}
+.fas{
+    font-size: small;
+}
+
+.card_payment{
+    padding: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    width: 35vw;
+    border-top-right-radius: 8%;
+    border-bottom-right-radius: 8%;
+    background-color: rgb(85, 178, 255);
+    box-shadow: 2px 2px 8px rgba(128, 128, 128, 0.719);
+}
+
+.card_logo{
+    margin-top: 3vh;
+    width: 70%;
+    height: 30%;
+    background-image: url(Images/visa.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form{
+    width: 100%;
+    margin-top: 2vh;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgba(59, 132, 192, 0.596);
+    color: white;
+    transition: 0.3s ease-in-out;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+input:hover{
+    box-shadow: 2px 2px 8px rgba(0, 71, 129, 0.89);
+}
+input[type=text]::placeholder, input[type=password]::placeholder{
+    color: rgb(219, 219, 219);
+    font-size: 14px;
+}
+.card_name, .card_number, .exp_cvv {
+    width: 95%;
+    height: 34%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+.card_name input, .card_number input{
+    width: 100%;
+    height: 100%;
+}
+.exp input, .cvv input{
+    width: 95%;
+    height: 100%;
+}
+.cvv{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkout{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.checkout_button{
+    border: 3px solid rgb(0, 189, 0);
+    height: 50%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.795);
+    transition: 0.5s ease-in-out;
+    font-weight: 700;
+}
+.checkout_button:hover{
+    color: white;
+    background-color: rgb(0, 189, 0);
+    box-shadow: 8px 8px 8px rgba(0, 255, 0, 0.856);
+    cursor: pointer;
+}
+
+/* Source code cutton*/
+.buttoncontainer {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10vh;
+    margin-bottom: 5vh;
+}
+.buttoncontainer a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: rgb(0, 10, 66);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 30px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.buttoncontainer a:hover {
+    color: white;
+    background: rgb(0, 10, 66);
+    box-shadow: 0 0 10px rgb(0, 10, 66), 0 0 10px rgb(0, 10, 66), 0 0 10px rgb(0, 10, 66); 
+    transition-delay: 1s;
+}
+
+.buttoncontainer a span {
+    position: absolute;
+    display: block;
+}
+.buttoncontainer a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,rgb(0, 10, 66));
+}
+.buttoncontainer a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+.buttoncontainer a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,rgb(0, 10, 66));
+}
+.buttoncontainer a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.buttoncontainer a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,rgb(0, 10, 66));
+}
+.buttoncontainer a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.buttoncontainer a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,rgb(0, 10, 66));
+}
+.buttoncontainer a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+/* Mobile view button */
+.mobile_source_button {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 4vh;
+}
+.mobile_source_button a{
+    padding: 2vh;
+    font-size: 16px;
+    border: 2px solid #2196f3;  
+    background-color: #2196f3;
+    color: white;    
+}
+@media only screen and (max-width: 699px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        height: 200vh;
+        background-color: rgb(167, 255, 226);
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .order_summary{
+        margin-top: 5vh;
+        padding: 4vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 50%;
+        width: 95%;
+        background-color: rgb(255, 249, 249);
+        border-top-left-radius: 8%;
+        border-bottom-left-radius: 0%;
+        border-top-right-radius: 8%;
+        border-bottom-right-radius: 0%;        
+        box-shadow: 2px 2px 8px rgba(128, 128, 128, 0.719);
+    }
+    
+    .card_payment{
+        margin-bottom: 5vh;
+        padding: 4vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50%;
+        width: 95%;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 8%;
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 8%;
+        background-color: rgb(85, 178, 255);
+        box-shadow: 2px 2px 8px rgba(128, 128, 128, 0.719);
+    }
+    
+    .checkout_button{
+        color: white;
+        background-color: rgb(0, 189, 0);
+        box-shadow: 8px 8px 8px rgba(0, 255, 0, 0.856);
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .buttoncontainer{
+        display: none;
+    }
+}
+@media only screen and (min-width: 700px) {
+    .mobile_source_button{
+        display: none;
+    }   
+}
+          </textarea>
+        </div>
+      </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

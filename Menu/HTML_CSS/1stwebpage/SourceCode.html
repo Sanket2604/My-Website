@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../code.png" type="image/gif">
+    <link rel="stylesheet"  href="SourceCodeStyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Source Code</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" style="font-size: 30px;" href="../AboutMe.html" target="_blank">Sanket</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"></button>       
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav mr-auto ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../AboutMe/AboutMe.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../../ContactMe/Contactme.html">Contact Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../Menu/Main_Menu/Menu.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../Blog/blog.html">Blog</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><b>Search</b></button>
+          </form>
+        </div>
+    </nav>
+    
+    <div class="container-fluid cont2">
+      <div class="row row-content row1">
+        <div class="col-12">
+          <p class="heading">My First Web Page</p>
+          <p class="content">I created a very simple <a class="ab" href="1stwebpage.html" target="_blank">Web Page</a>. At that time i had no idea about CSS flex box. I had used css grids. That webpage is not responsive too. I have included this over here just as a memory. It's a reminder of how much I struggled to make that webpage.</p>
+          <p class="heading">Source code</p>
+          <p class="content" style="text-align: center; font-size: xxx-large; letter-spacing: 0.2em;"><b>HTML</b></p>
+        </div>
+      </div>
+      <div class="row row-content">
+        <div class="col-12 code1">
+          <textarea readonly>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanket</title>
+  <link href="1stwebpagestyle.css" type="text/css" rel="stylesheet">  
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class = nav>
+        <li class = li1><a href="#">Home</a></li>
+        <li class = li2><a href="#">About Us</a></li>
+        <li class = li3><a href="#">Contact Us</a></li>
+     </ul>
+    </nav>   
+  </header>
+  <div class = body1>  
+      <div>
+        <!-- to make space for header im new to this please dont judge me :'( -->
+      </div>
+       <div class = content>
+          <div class = box1>
+            <div class = para1>
+              <p>Hey! Welcome to my first website. This is a personal portfolio I created for myself. 
+                This took me about five to six hours of coding using HTML and CSS languages. 
+                This is the first webpage of a grand website. I plan to make a website which automatically creates personal webpage for people.
+                 I plan to make this a trend, like everyone will have their own personal portfolio on this website.
+                  I’ll add more feature make the webpage more interactive as time passes.  If you have any suggestions to share, 
+                  please click on contact me on navigation bar to get in touch with me. </p>
+            </div>
+            <div class = para2>
+              <p> I am pursuing Information Science Engineering in Sri Venkateshwara College of Engineering aka SVCE. 
+                I love to code and have recently taken interest in Web Development. 
+                In the near future I see myself as a full stacks web developer.  
+                Currently I have made a good progress in front end web development. 
+                My next goal is to learn front end development in detail.</p> 
+            </div>
+          </div>
+          <div class = box2>
+            <div class = pic>            
+            </div>
+            <div class = name>
+              <p>Sanket Banerjee</p>
+            </div>
+            <div class = dob>
+              <p>26<sup>th</sup> April 2000</p>
+            </div>
+            <div class = profession>
+              <p>Noob Full Stacks Developer</p>
+            </div>            
+          </div>
+          <div class = box3>
+            <div class = hob>
+             <p>My Hobbies are: </p>
+             <ol>
+               <li class = li4>Coding</li>
+               <li class = li5>Music</li>
+               <li class = li6>Learning</li>
+             </ol>
+            </div>
+            <div class = codeing >
+
+            </div>
+            <div class = music >
+
+            </div>
+            <div class = learn>
+
+            </div>
+          </div>
+      </div>
+     <div class=aads>
+
+     </div>
+    </div>
+</body>
+</html>
+          </textarea>
+        </div>
+      </div>
+      
+      <div class="row row-content row1">
+        <div class="col-12">
+          <p class="content" style=" text-align: center; font-size: xxx-large; letter-spacing: 0.2em;"><b>CSS</b></p>
+        </div>      
+      </div>
+      <div class="row row-content">
+        <div class="col-12 code1">
+          <textarea readonly>
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;    
+}
+body{
+    background-image: url(Images/contentpic.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+header {
+    display: flex;
+    width: 100%;
+    background-color: rgba(88, 88, 88, 0.774);
+    justify-content: space-evenly;
+    position: fixed;
+}
+.li1, .li2, .li3  {
+    font-size: 25px;    
+    display: inline-block;
+    padding: 25px 25px; 
+}
+.li1, .li2, .li3, a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+ }
+ a:hover {
+    color: rgb(0, 255, 255);
+}
+.body1{
+    display: grid;
+    grid-template-rows: 100px 900px 300px ;
+}
+.content {
+    display: grid;
+    grid-template: 3fr 1fr / 2fr 1fr;
+    margin: 0px 20px 0px 20px;  
+    grid-gap: 5px;
+}
+.box1, .box3{
+    box-shadow: 10px 10px #36363681;
+    background-color: rgba(223, 205, 205, 0.705);
+}
+.box1{
+    margin: 10px 5px 5px 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 40px;
+}
+.para1, .para2{
+    padding: 10px 20px 10px 20px;
+}
+p{
+    font-family: "Bodoni MT";
+    font-size: 26px;
+    font-weight: 600;
+    text-align: justify;
+}
+.box2{
+    margin: 10px 10px 5px 5px;
+    display: grid;
+    grid-template-rows: 5fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.pic, .name, .dob, .profession{
+    margin: 0px 10px;
+    box-shadow: 5px 5px #36363681;
+}
+.name, .dob, .profession{
+    display: flex;
+    align-items: center;
+}
+.pic{
+    background-image: url(Images/sanket.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.name{
+    background-color: rgba(75, 183, 255, 0.692);
+    padding: 0px 0px 0px 115px;
+}
+.dob{
+    background-color: rgba(7, 202, 82, 0.699);
+    padding: 0px 0px 0px 125px;
+}
+.profession{
+    background-color: rgba(198, 201, 161, 0.726);
+    padding: 0px 0px 0px 63px;
+}
+.box3{
+    grid-area: 2/1/3/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 5px 10px 10px 10px;
+    padding: 20px 20px;
+}
+.li4, .li5, .li6{
+    display: block;
+    font-family: "Bodoni MT";
+    font-size: 26px;
+    font-weight: 600;
+    padding-left: 50px;
+}
+.codeing{
+    background-image: url(Images/coding.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.learn{
+    background-image: url(Images/learning.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.music{
+    background-image: url(Images/music.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.aads {
+    margin: 20px 20px 20px 20px;
+    box-shadow: 10px 10px #36363681;
+    background-image: url(Images/feedback.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+          </textarea>
+        </div>
+      </div>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

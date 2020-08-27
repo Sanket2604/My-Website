@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../code.png" type="image/gif">
+    <link rel="stylesheet"  href="SourceCodeStyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Source Code</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" style="font-size: 30px;" href="../AboutMe.html" target="_blank">Sanket</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"></button>       
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav mr-auto ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../AboutMe/AboutMe.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../../ContactMe/Contactme.html">Contact Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../Menu/Main_Menu/Menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../Blog/blog.html">Blog</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><b>Search</b></button>
+          </form>
+        </div>
+    </nav>
+    <div class="container-fluid cont2">
+      <div class="row row-content row1">
+        <div class="col-12">
+          <p class="heading">Login Page</p>
+          <p class="content">I created a basic <a class="ab" href="Login.html" target="_blank">Login Page</a>. This login page is built on HTML and CSS and is responsive. It is not funxtional currently, in future I will make a functional login page which does validation. Stay tuned.</p>
+          <p class="heading">Source code</p>
+          <p class="content" style="text-align: center; font-size: xxx-large; letter-spacing: 0.2em;"><b>HTML</b></p>
+        </div>
+      </div>
+      <div class="row row-content">
+        <div class="col-12 code1">
+          <textarea readonly>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/lock.png" type="image/gif">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet"  href="login.css">
+    <script src="https://kit.fontawesome.com/dc9678cfdb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#" target="_blank">Sanket</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"></button> 
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav mr-auto ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../AboutMe/AboutMe.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../../ContactMe/Contactme.html">Contact Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../Main_Menu/Menu.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../Blog/blog.html">Blog</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><b>Search</b></button>
+          </form>
+        </div>
+    </nav>
+    <div class="body">
+        <div class="login">
+            <div class="userpic"></div>
+            <div class="username">
+                <input type="email" placeholder="Email Id">
+            </div>
+            <div class="password">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="fpass">
+                <a href="#">Forgot Password?</a>
+            </div>
+            <div class="loginbtn">
+                <a href="#"><div class="button">Login</div></a>
+            </div>
+        </div>       
+    </div>
+</body>
+</html>
+          </textarea>
+        </div>
+      </div>
+      
+      <div class="row row-content row1">
+        <div class="col-12">
+          <p class="content" style=" text-align: center; font-size: xxx-large; letter-spacing: 0.2em;"><b>CSS</b></p>
+        </div>      
+      </div>
+      <div class="row row-content">
+        <div class="col-12 code1">
+          <textarea readonly>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ /* Nav bar starts here */
+ nav{
+    background-color: rgba(0, 0, 0, 0.705);
+}
+.navbar-brand{
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    color: white;
+}
+.nav-link{
+    font-family: 'Allan', cursive;
+    font-size: 30px;
+    color: white;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+.nav-link:hover{
+    color: white !important;
+}
+.btn{
+    border: 3px solid white;
+}
+.navbar-toggler{
+    background-image: url(../../../Images/toggle.png);
+    background-size: cover;
+    height: 30px;
+    width: 60px;
+}
+/* Body starts here*/
+body{
+    background-image: url(Images/background.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.body{
+    display: flex;
+    height: 88vh;
+    width: 100vw;
+    margin-top: 12vh;
+    justify-content: center;
+    align-items: center;
+}
+/* Login page is here*/
+
+.login{
+    display: flex;
+    height: 75vh;
+    min-width: 50vmin;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url(Images/backgroundblur.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.userpic{
+    background-image: url(Images/user.png);
+    background-position: center;
+    background-size: contain;
+    background-color: rgba(240, 248, 255, 0.658);
+    width: 50%;
+    min-height: 25vmin;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-bottom: 5vh;
+}
+.username{
+    margin-bottom: 2vh;
+    width: 80%;
+}
+.username input[type=email], .password input[type=password]{
+    width: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    outline: none;
+    border-radius: 16px;
+    height: 40px;
+    padding: 10px;
+    background-color: rgba(240, 248, 255, 0);
+    border: 2px solid white;
+    color: white;
+}
+.username input[type=email]::placeholder, .password input[type=password]::placeholder{
+    color: white;
+}
+.password {
+    width: 80%;
+}
+.fpass{
+    text-align: left;
+    width: 80%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    padding-left: 1vh;
+    color: blue;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    font-size: medium;
+    transition: 0.5s ease-in-out;
+}
+.loginbtn{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+.loginbtn .button{
+    width: fit-content;
+    padding: 2vh 4vw;    
+    transition: 0.5s ease-in-out;
+    color: white;
+}
+
+.loginbtn .button:hover{
+    box-shadow: rgba(0, 0, 0, 0.705);
+    background-color: rgba(255, 255, 255, 0.514);
+    color: black;
+}
+.loginbtn a:hover{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .login{
+        min-width: 65vmin;
+    }
+}
+          </textarea>
+        </div>
+      </div>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
