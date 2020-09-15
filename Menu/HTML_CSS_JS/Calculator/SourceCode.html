@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../code.png" type="image/gif">
+    <link rel="stylesheet"  href="SourceCodeStyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Source Code</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" style="font-size: 30px;" href="../AboutMe.html" target="_blank">Sanket</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"></button>       
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav mr-auto ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../AboutMe/AboutMe.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../../ContactMe/Contactme.html">Contact Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../Menu/Main_Menu/Menu.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../Blog/blog.html">Blog</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><b>Search</b></button>
+          </form>
+        </div>
+    </nav>
+    <div class="container-fluid cont2">
+      <div class="row row-content row1">
+        <div class="col-12">
+          <p class="heading">Calculator</p>
+          <p class="content">I created a <a class="ab" href="calc.html" target="_blank">Calculator</a>. Calculator is a very handy tool which we use all the time. The computation is done by JavaScript in the browser.</p>
+          <p class="heading">Source code</p>
+          <p class="content" style="text-align: center; font-size: xxx-large; letter-spacing: 0.2em;"><b>HTML</b></p>
+        </div>
+      </div>
+      <div class="row row-content">
+        <div class="col-12 code1">
+          <textarea readonly>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="favicon.ico" type="image/gif">
+    <link rel="stylesheet" href="calc.css">
+    <script src="calc.js" defer></script>
+</head>
+<body>
+    <div class="calculator-grid">
+        <div class="output">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>
+        <button data-all-clear class="span-two">AC</button>
+        <button data-delete>DEL</button>
+        <button data-operation>/</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>*</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>+</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>-</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-equals class="span-two">=</button>
+    </div>
+</body>
+</html>
+          </textarea>
+        </div>
+      </div>
+      
+      <div class="row row-content row1">
+        <div class="col-12">
+          <p class="content" style=" text-align: center; font-size: xxx-large; letter-spacing: 0.2em;"><b>CSS</b></p>
+        </div>      
+      </div>
+      <div class="row row-content">
+        <div class="col-12 code1">
+          <textarea readonly>
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right,#00AAFF,#00FF6C);
+}
+
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    grid-template: 0.14fr 0.14fr 0.14fr 0.14fr 0.14fr 0.14fr / 0.1fr 0.1fr 0.1fr 0.1fr;
+}
+
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.75);
+    transition: all 0.5s ease-in-out;
+}
+
+.calculator-grid > button:hover {
+    transform: scale(1.04);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5rem;
+}
+
+.output .current-operand{
+    color: rgba(255, 255, 255);
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .buttoncontainer{
+        display: none;
+    }
+}   
+@media only screen and (min-width: 700px) {
+    .mobile_source_button{
+        display: none;
+    }   
+}
+
+@media only screen and (max-width: 599px) and (min-width: 200px){
+    .calculator-grid{
+        grid-template: 0.14fr 0.14fr 0.14fr 0.14fr 0.14fr 0.14fr / 0.22fr 0.22fr 0.22fr 0.22fr;
+    }   
+}
+
+@media only screen and (max-width: 899px) and (min-width: 600px) {
+    .calculator-grid{
+        grid-template: 0.14fr 0.14fr 0.14fr 0.14fr 0.14fr 0.14fr / 0.18fr 0.18fr 0.18fr 0.18fr;
+    }   
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+    .calculator-grid{
+        grid-template: 0.14fr 0.14fr 0.14fr 0.14fr 0.14fr 0.14fr / 0.15fr 0.15fr 0.15fr 0.15fr;
+    }   
+}
+
+@media only screen and (min-width: 900px) and (max-width: 2000px) {
+    .calculator-grid{
+        grid-template: 0.14fr 0.14fr 0.14fr 0.14fr 0.14fr 0.14fr / 0.1fr 0.1fr 0.1fr 0.1fr;
+    }   
+}
+          </textarea>
+        </div>
+      </div>
+      <div class="row row-content row1">
+        <div class="col-12">
+          <p class="content" style="text-align: center; font-size: xxx-large; letter-spacing: 0.2em;"><b>JavaScript</b></p>
+        </div>
+      </div>
+      <div class="row row-content">
+        <div class="col-12 code1">
+          <textarea readonly>
+class Calculator {
+    constructor(previousOperandTextElement, currentOperandTextElement) {
+        this.previousOperandTextElement = previousOperandTextElement
+        this.currentOperandTextElement = currentOperandTextElement
+        this.clear()
+    }
+
+    clear() {
+        this.currentOperand = '';
+        this.previousOperand = '';
+        this.operation = undefined;
+    }
+
+    delete() {
+        this.currentOperand = this.currentOperand.toString().slice(0,-1)
+    }
+
+    appendNumber(number) {
+        if (number === '.' && this.currentOperand.includes('.')) return
+        this.currentOperand = this.currentOperand.toString() + number.toString()
+    }
+
+    chooseOperation(operation){
+        if(this.currentOperand === '') return
+        if(this.previousOperand !== '') {
+            this.compute()
+        }
+        this.operation = operation
+        this.previousOperand = this.currentOperand
+        this.currentOperand = ''
+    }
+
+    compute() {
+        let computation
+        const prev =parseFloat(this.previousOperand)
+        const current =parseFloat(this.currentOperand)
+        if(isNaN(prev) || isNaN(current)) return
+        switch(this.operation) {
+            case '+' : 
+                computation = prev + current
+                break
+            case '-' : 
+                computation = prev - current
+                break
+            case '*' : 
+                computation = prev * current
+                break
+            case '/' : 
+                computation = prev / current
+                break
+            default: return
+        }
+        this.currentOperand = computation
+        this.operation = undefined
+        this.previousOperand = ''
+    }  
+
+    getDisplayNumber(number) {
+        const stringNumber = number.toString()
+        const integerDigits = parseFloat(stringNumber.split('.')[0])
+        const decimalDigits = stringNumber.split('.')[1]
+        let integerDisplay
+        if(isNaN(integerDigits)) {
+            integerDisplay = ''
+        } else {
+            integerDisplay = integerDigits.toLocaleString('en', {
+                maximumFractionDigits: 0})
+        }
+        if(decimalDigits != null){
+            return `${integerDisplay}.${decimalDigits}`
+        } else {
+            return integerDisplay
+        }
+    }
+
+    updateDisplay() {
+        this.currentOperandTextElement.innerText = this.getDisplayNumber(this.currentOperand) 
+        if(this.operation != null) {
+            this.previousOperandTextElement.innerText = `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
+        } else {
+            this.previousOperandTextElement.innerText = ''
+        }
+        
+    }
+}
+
+const numberButtons = document.querySelectorAll('[data-number]');
+const operationButtons = document.querySelectorAll('[data-operation]');
+const equalsButton = document.querySelector('[data-equals]')
+const deleteButton = document.querySelector('[data-delete]')
+const allClearButton = document.querySelector('[data-all-clear]')
+const previousOperandTextElement = document.querySelector('[data-previous-operand]')
+const currentOperandTextElement = document.querySelector('[data-current-operand]')
+
+const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
+
+numberButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        calculator.appendNumber(button.innerText)
+        calculator.updateDisplay()
+    })
+})
+
+operationButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        calculator.chooseOperation(button.innerText)
+        calculator.updateDisplay()
+    })
+})
+
+equalsButton.addEventListener('click', button => {
+    calculator.compute()
+    calculator.updateDisplay()
+})
+
+allClearButton.addEventListener('click', button => {
+    calculator.clear()
+    calculator.updateDisplay()
+})
+
+deleteButton.addEventListener('click', button => {
+    calculator.delete()
+    calculator.updateDisplay()
+})
+          </textarea>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
