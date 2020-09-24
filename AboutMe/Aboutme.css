@@ -25,9 +25,6 @@ nav{
 .nav-link:hover{
     color: white !important;
 }
-.btn{
-    border: 3px solid white;
-}
 .navbar-toggler{
     background-image: url(../Images/toggle.png);
     background-size: cover;

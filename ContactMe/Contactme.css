@@ -26,9 +26,6 @@ nav{
 .nav-link:hover{
     color: white !important;
 }
-.btn{
-    border: 3px solid white;
-}
 .navbar-toggler{
     background-image: url(../Images/toggle.png);
     background-size: cover;
@@ -38,6 +35,7 @@ nav{
 /* Body layout lies here*/
 body{
     background-image: url(contactmepic.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: 0;

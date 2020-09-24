@@ -20,10 +20,7 @@
     transition-duration: 0.5s;
 }
 .nav-link:hover{
-    color: white !important;
-}
-.btn{
-    border: 3px solid white;
+    color: white;
 }
 .navbar-toggler{
     background-image: url(Images/toggle.png);
@@ -36,19 +33,17 @@
     width: 100vw;
     height: 100vh;    
     z-index: 0;
-    background-image: url(Images/Homeimg1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     transition: 10s;
-    animation-delay: 3s;
     animation-name: animate;
     animation-direction: normal;
-    animation-duration: 50s;
+    animation-duration: 100s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-play-state: running;
-    animation-timing-function: ease-in;
+    animation-timing-function: linear;
 }
 
 .content{
@@ -88,7 +83,7 @@
 
 @keyframes animate{
     0%{
-        background-image: url(Images/Homeimg11.png);
+        background-image: url(Images/Homeimg1.png);
     }
     20%{
         background-image: url(Images/Homeimg2.png);
@@ -112,9 +107,9 @@
         background-image: url(Images/Homeimg8.png);
     }
     90%{
-        background-image: url(Images/Homeimg9.png);
+        background-image: url(Images/Homeimg10.png);
     }
     100%{ 
-        background-image: url(Images/Homeimg10.png);
+        background-image: url(Images/Homeimg1.png);
     }
 }

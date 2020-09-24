@@ -25,9 +25,6 @@ nav{
 .nav-link:hover{
     color: white !important;
 }
-.btn{
-    border: 3px solid white;
-}
 .navbar-toggler{
     background-image: url(../../Images/toggle.png);
     background-size: cover;
@@ -67,32 +64,24 @@ a:hover{
     border-right: 5px solid orangered;
     border-bottom: 5px solid darkblue;
     border-left: 5px solid darkblue;
-    min-width: 30vw;
-    min-height: 30vh;
 }
 .box2{
     border-top: 5px solid orangered;
     border-right: 5px solid darkblue;
     border-bottom: 5px solid purple;
     border-left: 5px solid purple;
-    min-width: 30vw;
-    min-height: 30vh;
 }
 .box3{
     border-top: 5px solid orangered;
     border-right: 5px solid darkblue;
     border-bottom: 5px solid darkblue;
     border-left: 5px solid yellow;
-    min-width: 30vw;
-    min-height: 30vh;
 }
 .box4{
     border-top: 5px solid orangered;
     border-right: 5px solid darkblue;
     border-bottom: 5px solid lightseagreen;
     border-left: 5px solid purple;
-    min-width: 30vw;
-    min-height: 30vh;   
 }
 .heading{
     font-family: 'Cormorant Garamond', serif;

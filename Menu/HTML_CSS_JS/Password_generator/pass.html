@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/gif">
+    <title>Password Generator</title>
+    <script src="pass.js" defer></script>
+    <link href="pass.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Password Generator</h1>
+        <h3 class="password-display" id="passwordDisplay">Password</h3>
+        <form id="passwordGeneratorForm" class="form">
+            <label for="charecterAmountNumber">Number Of Charecters</label>
+            <div class="charecter-amount-container">
+                <input type="range" min="1" max="50" value="10" id="charecterAmountRange">
+                <input class="number-input" type="number" min="1" max="50" value="10" id="charecterAmountNumber">
+            </div>
+
+            <label for="includeUppercase">Include Uppercase</label>
+            <input type="checkbox" id="includeUppercase">
+
+            <label for="includeNumbers">Include Numbers</label>
+            <input type="checkbox" id="includeNumbers">
+
+            <label for="includeSymbols">Include Symbols</label>
+            <input type="checkbox" id="includeSymbols">
+
+            <button class="btn" type="submit">Generate Password</button>
+        </form>
+    </div>
+    <div class = "source_button">
+        <div class="buttoncontainer">
+          <a style = "text-decoration: none;" href="SourceCode.html">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            View Source Code
+          </a>
+        </div>
+    </div>
+</body>
+</html>

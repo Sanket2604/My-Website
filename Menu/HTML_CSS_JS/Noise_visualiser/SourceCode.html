@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../code.png" type="image/gif">
+    <link rel="stylesheet"  href="SourceCodeStyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Source Code</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" style="font-size: 30px;" href="../AboutMe.html" target="_blank">Sanket</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"></button>       
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav mr-auto ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../AboutMe/AboutMe.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../../ContactMe/Contactme.html">Contact Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../Menu/Main_Menu/Menu.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../Blog/blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="container-fluid cont2">
+      <div class="row row-content row1">
+        <div class="col-12">
+          <p class="heading">Music Visualiser</p>
+          <p class="content">I created a <a class="ab" href="noise.html" target="_blank">Music Visualiser</a>using HTML, CSS and JavaScript. This uses the Audio API of JavaScript. There is a smooth change of background pictures. The bars on the screen sync with the song and have different colors at different frequencies.</p>
+          <p class="heading">Source code</p>
+          <p class="content" style="text-align: center; font-size: xxx-large; letter-spacing: 0.2em;"><b>HTML</b></p>
+        </div>
+      </div>
+      <div class="row row-content">
+        <div class="col-12 code1">
+          <textarea readonly>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="music.ico" type="image/gif">
+    <title>Voice Visualiser</title>
+    <script src="noise.js" defer></script>
+    <link href="noise.css" rel="stylesheet">
+</head>
+<body scroll="no">
+    <canvas scroll="no" id="visualizer"></canvas>
+</body>
+</html>
+          </textarea>
+        </div>
+      </div>
+      
+      <div class="row row-content row1">
+        <div class="col-12">
+          <p class="content" style=" text-align: center; font-size: xxx-large; letter-spacing: 0.2em;"><b>CSS</b></p>
+        </div>      
+      </div>
+      <div class="row row-content">
+        <div class="col-12 code1">
+          <textarea readonly>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allan&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.705);
+}
+.navbar-brand{
+    font-family: 'Great Vibes', cursive;
+    
+    color: white;
+}
+.nav-link{
+    font-family: 'Allan', cursive;
+    font-size: 30px;
+    color: white;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+.nav-link:hover{
+    color: white !important;
+}
+.btn{
+    border: 3px solid white;
+}
+.navbar-toggler{
+    background-image: url(../../../Images/toggle.png);
+    background-size: cover;
+    height: 30px;
+    width: 60px;
+}
+.ab{
+    transition: ease-in-out;
+    transition-duration: 1s;
+}
+.ab:hover{
+    text-decoration: none;
+    color: darkblue;
+}
+
+.cont2{
+    background-image: url(../../menucode.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 0;
+    padding: 15vh;
+    color: white;
+}
+.heading{
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: xxx-large;
+}
+.content{
+    font-family: 'Patrick Hand', cursive;
+    text-align: justify;
+    font-size: xx-large;
+}
+textarea{
+    height: 80vh;
+    width: 95vw;
+    font-family: 'Source Code Pro', monospace;
+    font-size: x-large;
+    font-weight: 650;
+    background-color: rgba(128, 128, 128, 0.795);
+    border: 2px solid rgba(128, 128, 128, 0.9);
+    padding: 5vh;
+}
+.row1{
+    padding: 5vh;
+}
+          </textarea>
+        </div>
+      </div>
+      <div class="row row-content row1">
+        <div class="col-12">
+          <p class="content" style="text-align: center; font-size: xxx-large; letter-spacing: 0.2em;"><b>JavaScript</b></p>
+        </div>
+      </div>
+      <div class="row row-content">
+        <div class="col-12 code1">
+          <textarea readonly>
+const volume = document.getElementById('volume')
+const bass = document.getElementById('bass')
+const mid = document.getElementById('mid')
+const treble = document.getElementById('treble')
+const visualizer = document.getElementById('visualizer')
+
+const context = new AudioContext()
+const analyserNode = new AnalyserNode(context, { fftSize: 1024 })
+
+setupContext()
+resize()
+drawVisualiser()
+
+async function setupContext(){
+    const guitar = await getGuitar()
+    if(context.state === 'suspended'){
+        await context.resume()
+    }
+    const source = context.createMediaStreamSource(guitar)
+    source
+        .connect(analyserNode)
+}
+
+function getGuitar(){
+    return navigator.mediaDevices.getUserMedia({
+        audio: {
+            echoCancellation: false,
+            autoGainControl: false,
+            noiseSuppression: false,
+            latency: 0
+        }
+    })
+}
+
+function drawVisualiser(){
+    requestAnimationFrame(drawVisualiser)
+
+    const bufferLength = analyserNode.frequencyBinCount
+    const dataArray = new Uint8Array(bufferLength)
+    analyserNode.getByteFrequencyData(dataArray)
+    const width = visualizer.width*3.1
+    const height = visualizer.height
+    const barWidth = width / bufferLength
+
+    const canvasContext = visualizer.getContext('2d')
+    canvasContext.clearRect( 0, 0, width, height)
+
+    dataArray.forEach((item, index) => {
+        const y = item / 255 * height / 3
+        const x = barWidth * index
+
+        canvasContext.fillStyle = `hsl(${y / height * 600}, 100%, 50%)`
+        canvasContext.fillRect(x, height - y, barWidth, y)
+    })
+}
+
+function resize(){
+    visualizer.width = visualizer.clientWidth * window.devicePixelRatio
+    visualizer.height = visualizer.clientHeight * window.devicePixelRatio
+}
+
+
+          </textarea>
+        </div>
+      </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

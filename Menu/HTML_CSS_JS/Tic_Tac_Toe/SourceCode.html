@@ -30,10 +30,6 @@
               <a class="nav-link" href="../../../Blog/blog.html">Blog</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><b>Search</b></button>
-          </form>
         </div>
     </nav>
     <div class="container-fluid cont2">
@@ -70,17 +66,6 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
-    </div>
-    <div class = "source_button">
-      <div class="buttoncontainer">
-        <a style = "text-decoration: none;" href="HTML-CSS-JS.html">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          View Source Code
-        </a>
-      </div>
     </div>
     <div class="winning_message" id="winningMessage">
         <div data-winning-message-text></div>
@@ -253,90 +238,6 @@
     background-image: url(d_bac.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
-/* Button style */
-.buttoncontainer {
-    display: flex;
-    font-family: 'Times New Roman', Times, serif;
-    padding-bottom: 20vh;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 10vh;
-}
-.buttoncontainer a{
-    position: relative;
-    display: inline-block;
-    padding: 15px 30px;
-    color: #0C374D;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 30px;
-    overflow: hidden;
-    transition: 0.2s;
-}
-.buttoncontainer a:hover {
-    color: white;
-    background: #0C374D;
-    box-shadow: 0 0 10px #107896, 0 0 10px #107896, 0 0 10px #107896; 
-    transition-delay: 1s;
-}
-
-.buttoncontainer a span {
-    position: absolute;
-    display: block;
-}
-.buttoncontainer a span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg,transparent,#0C374D);
-}
-.buttoncontainer a:hover span:nth-child(1) {
-    left: 100%;
-    transition: 1s;
-}
-.buttoncontainer a span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg,transparent,#0C374D);
-}
-.buttoncontainer a:hover span:nth-child(3) {
-    right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
-}
-.buttoncontainer a span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg,transparent,#0C374D);
-}
-.buttoncontainer a:hover span:nth-child(2) {
-    top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
-}
-.buttoncontainer a span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg,transparent,#0C374D);
-}
-.buttoncontainer a:hover span:nth-child(4) {
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.75s;
-}
-
-@media only screen and (max-width: 766px) {
-    .buttoncontainer{
-        display: none;
-    }
 }   
           </textarea>
         </div>
